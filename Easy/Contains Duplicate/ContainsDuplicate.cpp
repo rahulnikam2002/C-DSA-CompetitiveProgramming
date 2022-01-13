@@ -26,24 +26,24 @@
 #include <algorithm>
 #include <vector> 
 
-class Solution {
-public:
-    bool containsDuplicate(vector<int>& nums) {
-        sort(nums.begin(), nums.end());
-        bool checkDuplicate = true;
-        if(nums.size() == 0 || nums.size() == 1)
-            checkDuplicate = false;
+// class Solution {
+// public:
+//     bool containsDuplicate(vector<int>& nums) {
+//         sort(nums.begin(), nums.end());
+//         bool checkDuplicate = true;
+//         if(nums.size() == 0 || nums.size() == 1)
+//             checkDuplicate = false;
             
-        for(int i = 0; i<nums.size()-1; i++){
-            if(nums[i] == nums[i+1]){
-                checkDuplicate = true;
-                break;
-            }
-            else{
-                checkDuplicate = false;
-            }
-        }
-        return checkDuplicate;
-    }
+//         for(int i = 0; i<nums.size()-1; i++){
+//             if(nums[i] == nums[i+1]){
+//                 checkDuplicate = true;
+//                 break;
+//             }
+//             else{
+//                 checkDuplicate = false;
+//             }
+//         }
+//         return checkDuplicate;
+//     }
 
-};
+// };
